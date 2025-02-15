@@ -1,0 +1,401 @@
+@font-face {
+    font-family: "my-font";
+    src: url("./Think Smart .ttf");
+}
+
+body {
+    background: linear-gradient(to right, #0f0719, #302b63, #0f0719);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 95%;
+    height:4rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+.name{
+    font-family: "my-font";
+    font-weight: 500;
+    font-size: 40px;
+    color: #ff4081;
+}
+nav{
+    margin-right: 10px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+nav a:hover{
+    color: #a19ae8;
+    font-size: 18px;
+}
+.intro {
+    margin-top: 50px;
+}
+.code-block {
+    background:black;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 10px 10px 10px 5px rgb(255, 64, 129,0.2);
+}
+.highlight {
+    color: #ff4081;
+}
+.social-icons img {
+    width: 40px;
+    margin: 10px;
+    cursor: pointer;
+}
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    box-shadow: 0 0 5px violet,0 0 25px violet,0 0 10px violet,0 0 20px;;
+
+}
+.contact {
+    background-color: #6a0dad;
+    color: white;
+    font-family:Georgia;
+}
+.contact a{
+    text-decoration: none;
+    color: white;
+}
+.resume {
+    background-color: #ff4081;
+    color: white;
+    font-family:Georgia;
+}
+.home-icons a{
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 2px solid #ff4081;
+    border-radius: 50%;
+    font-size: 20px;
+    color:#ff4081;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    padding: 10px;
+}
+.home-icons a:hover{
+    background: #ff4081;
+    color: #302b63 ;
+    box-shadow: 0 0 20px #ff4081;
+}
+.divider {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, #ff4081, #9b63cd);
+    margin: 40px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff4081, 0 0 20px #9b63cd;
+
+}
+
+.section-head{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+}
+.abt {
+    display: flex;
+    text-align: justify;
+    padding: 50px;
+    width: 50%;
+    margin: auto;
+}
+
+.about-text {
+    width: 50%;
+    text-align: left;
+}
+
+.abt_img {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgba(255, 64, 129, 0.7);
+}
+#skills {
+    width: 80%;
+    margin: auto;
+}
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    width: 80%;
+    margin: auto;
+}
+.skill-category {
+    flex: 1;
+    max-width: 300px;
+    border-left: 3px solid #ff4081;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+.skill-category li {
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+.skill-category li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    color: #ff4081;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .skill-category {
+        max-width: 90%;
+        text-align: center;
+        border-left: none;
+        border-bottom: 3px solid #ff4081;
+        padding: 10px;
+    }
+    .skill-category li {
+        text-align: center;
+        padding-left: 0;
+    }
+    .skill-category li::before {
+        display: none; /* Remove arrow in mobile view */
+    }
+}
+
+/* Education Section Styling */
+#education {
+    padding: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+/* Left Side: Education Info */
+.education-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+#e-logo{
+    font-size: 50px;
+    font-family: "my-font";
+    color: #ff4081;
+}
+.edu-box {
+    background: linear-gradient(90deg,#7b0093); /* Pink Gradient */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(220, 160, 220, 0.5);
+    transition: transform 0.3s;
+    border: #ff4081 1px dotted;
+}
+
+.edu-box:hover {
+    transform: scale(1.05);
+}
+
+/* Right Side: Education GIF */
+.education-gif {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-gif img {
+    width: 300px;
+    height: auto;
+    filter: hue-rotate(280deg); /* Adds pink color to the GIF */
+    animation: float 3s infinite ease-in-out;
+}
+
+/* Floating Animation for GIF */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .education-info, .education-gif {
+        width: 100%;
+    }
+}
+
+
+.container {
+    max-width: 70%;
+    margin: 50px auto;
+}
+.sticky-container {
+    position: relative;
+}
+.project {
+    position: sticky;
+    top: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: black;
+    border: #ff4081 1px solid;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(220, 160, 220, 0.5);
+}
+#contact {
+    padding: 50px 0;
+}
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px ;
+    border: #ff4081 1px solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 251, 251, 0.3);
+}
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    color: white;
+    margin: 10px 0;
+    border: white 1px solid;
+    border-radius: 5px;
+    font-size: 1em;
+    background: transparent;
+
+}
+.contact-form textarea {
+    height: 150px;
+    color: white;
+}
+.contact-form button {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.contact-form button:hover {
+    background: #e6006e;
+}
+.footer{
+  height: 200px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.flex{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+.text-right{
+    color: gray;
+    padding: 5px;
+}
+.second ul li{
+    list-style: none;
+}
+#f-logo{
+    font-family: my-font;
+    font-size: xx-large;
+    color: #ff4081;
+}
+.a-logo{
+    font-family: "my-font";
+    font-weight: 200;
+    font-size: 3rem;
+    text-decoration: underline 1px;
+    color: #ff4081;
+    text-shadow: -1px 1px violet;
+
+}
+#achievements{
+    padding: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ach-container{
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+}
+.a-box {
+    background: linear-gradient(90deg,#7b0093); /* Pink Gradient */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(220, 160, 220, 0.5);
+    transition: transform 0.3s;
+    border: #ff4081 1px dotted;
+}
+#a-logo{
+    width: 100px;
+    border-radius: 50%;
+}
+#thank-you{
+    display: none; 
+    background-color:rgb(1, 112, 1) ;
+    padding: 10px;
+    border: 1px white solid;
+    color:white ;
+    width: 30%;
+    margin:20px auto;
+}
