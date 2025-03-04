@@ -516,3 +516,40 @@ h2 {
     }
 } 
  
+/* Achievements Section: Centering and Spacing */
+.achievements {
+    max-width: 90%; /* Adjust width for better responsiveness */
+    margin: 0 auto; /* Center align */
+    padding: 20px; /* Add some spacing */
+}
+
+/* Project Section Stickiness */
+.projects {
+    position: sticky;
+    top: 10px; /* Adjust based on your layout */
+}
+
+/* Cards Layout for Mobile */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Space between cards */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .achievements, .projects {
+        width: 95%; /* Make sections wider on small screens */
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 10px; /* Reduce space between cards */
+    }
+
+    .card {
+        width: 100%; /* Full width for mobile */
+        margin-bottom: 10px; /* Extra spacing */
+    }
+}
