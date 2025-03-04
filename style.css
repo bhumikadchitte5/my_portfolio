@@ -90,7 +90,7 @@ nav a:hover{
     display: inline-block;
     text-align: left;
     max-width: 90%;
-    overflow-x: auto;
+    overflow-y: auto;
 }
 .highlight {
     color: #ff4081;
@@ -336,9 +336,12 @@ h2 {
     max-width: 70%;
     margin: 50px auto;
 }
+
 .sticky-container {
     position: relative;
+    min-height: 150vh; /* Ensures enough scroll space */
 }
+
 .project {
     position: sticky;
     top: 50px;
@@ -349,6 +352,17 @@ h2 {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(220, 160, 220, 0.5);
 }
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+    .project {
+        top: 20px; /* Reduce sticky space for small screens */
+    }
+    .sticky-container {
+        min-height: 200vh; /* Give extra space on mobile */
+    }
+}
+
 #contact {
     padding: 50px 0;
 }
@@ -359,10 +373,8 @@ h2 {
 
 /* Contact Section */
 
-
-
 .contact-form {
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
     padding: 20px ;
     border: #ff4081 1px solid;
@@ -462,10 +474,18 @@ h2 {
     width: 30%;
     margin:20px auto;
 }
+.s-logo{
+    width: 1.5rem;
+    margin-bottom: 3px;
+    border-radius: 50%;
+
+}
 
 
-
-
+.f-menu{
+    text-decoration: none;
+    color: #fff;
+}
 
 
 /* Footer */

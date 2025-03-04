@@ -32,13 +32,14 @@
       </h2>
       <div class="code-block">
         <pre>
-const coder = {
-    name: 'Bhumika Dinesh Chitte',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Python'],
-    hardWorker: true,
-    quickLearner: true,
-    problemSolver: true,
-};
+          const coder = {
+              name: 'Bhumika Dinesh Chitte',
+              skills: ['Web Development', 'MERN Stack', 'Python','Java'],
+              strengths: ['Innovative','Adaptable','Determined','Analytical'],
+              hardWorker: true,
+              quickLearner: true,
+              problemSolver: true,
+          };
             </pre
         >
       </div>
@@ -172,6 +173,12 @@ const coder = {
               <p><strong>Stack:</strong> FPGA Board,Verilog,Python</p>
               <p><strong>Role:</strong> Backend Developer</p>
           </div>
+          <div class="project">
+            <h2>Project 4</h2>
+            <p><strong>Description:</strong> Paperless Transparent College System</p>
+            <p><strong>Stack:</strong> MERN Stack[MongoDB,Express.js,React,Node.js]</p>
+            <p><strong>Role:</strong> Backend Developer</p>
+        </div>
       </div>
   </div>
 </section>
@@ -196,9 +203,25 @@ const coder = {
   <section id="contact">
     <h2>Contact Me</h2>
     <form class="contact-form" action="https://formspree.io/f/mgvonnyv" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        <div>
+          <input type="text" 
+          name="name" 
+          placeholder="Your Name" 
+          required>
+        </div>
+        <div>
+          <input type="email" 
+          name="email" 
+          placeholder="Your Email" 
+          required>
+        </div>
+        <div>
+          <textarea 
+          name="message" 
+          placeholder="Your Message" 
+          required>
+        </textarea>
+      </div>
         <button type="submit">Send Message</button>
     </form>
     <p id="thank-you" >Message sent successfully!</p>
@@ -213,18 +236,17 @@ const coder = {
     </div>
     <div class="second">
       <ul>
-        <li>Home</li>
-        <li>Skills</li>
-        <li>Education</li>
-        <li>Projects</li>
+        <li><a class="f-menu" href="#intro">Home</a></li>
+        <li><a class="f-menu" href="#skills">Skills</a></li>
+        <li><a class="f-menu" href="#education">Education</a></li>
+        <li><a class="f-menu" href="#project">Projects</a></li>
       </ul>
     </div>
     <div class="second">
       <ul>
-        <li>Home</li>
-        <li>Skills</li>
-        <li>Education</li>
-        <li>Projects</li>
+        <li><a href="https://www.linkedin.com/in/bhumika-d-chitte"><img class="s-logo" src="linkedin.PNG" alt=""></a></li>
+        <li><a href="https://www.instagram.com/bhumika_chitte5/"><img class="s-logo" src="insta.PNG" alt=""></a></li>
+        <li><a href="https://github.com/bhumikadchitte5"><img class="s-logo" src="github.PNG" alt=""></a></li>
       </ul>
     </div>
   </div>
@@ -256,7 +278,7 @@ const coder = {
         form.reset();
         setTimeout(() => {
           document.getElementById("thank-you").style.display = "none";
-        }, 5000);
+        }, 1000);
       } else {
         alert("Something went wrong, please try again.");
       }
