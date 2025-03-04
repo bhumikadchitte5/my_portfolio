@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
     font-family: "my-font";
     src: url("./Think Smart .ttf");
 }
@@ -90,7 +90,7 @@ nav a:hover{
     display: inline-block;
     text-align: left;
     max-width: 90%;
-    overflow-y: auto;
+    overflow-x: auto;
 }
 .highlight {
     color: #ff4081;
@@ -491,6 +491,7 @@ h2 {
 /* Footer */
 
 /* Responsive Adjustments */
+
 @media screen and (max-width: 768px) {
     .abt {
         flex-direction: column;
@@ -513,4 +514,5 @@ h2 {
         width: 90%;
         margin: auto;
     }
-}
+} 
+ 
